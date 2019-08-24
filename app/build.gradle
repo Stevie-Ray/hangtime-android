@@ -58,7 +58,7 @@ android {
     }
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
         }
     }
     compileOptions {
@@ -69,5 +69,5 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'com.github.GoogleChrome.custom-tabs-client:customtabs:7a2c1374a3'
+    implementation 'com.github.GoogleChrome.custom-tabs-client:customtabs:91b4a1270b'
 }
