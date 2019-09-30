@@ -7,7 +7,8 @@ def twaManifest = [
     name: 'Hangtime', // The name shown on the Android Launcher.
     themeColor: '#012E40', // The color used for the status bar.
     backgroundColor: '#012E40', // The color used for the splash screen background.
-    enableNotifications: false // Set to true to enable notification delegation
+    enableNotifications: false, // Set to true to enable notification delegation
+    useBrowserOnChromeOS: true // Set to false if you've added interaction with Android system APIs.
 ]
 
 android {
@@ -16,8 +17,8 @@ android {
         applicationId twaManifest.applicationId
         minSdkVersion 16
         targetSdkVersion 29
-        versionCode 5
-        versionName "0.9.5"
+        versionCode 16000906
+        versionName "0.9.6"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
         // The name for the application on the Android Launcher
@@ -55,6 +56,11 @@ android {
         // TrustedWebActivityService, by changing the android:enabled and android:exported
         // attributes
         resValue "bool", "enableNotification", twaManifest.enableNotifications.toString()
+
+        // The useBrowserOnChromeOS resources is used to enable or disable ChromeOS support for this
+        // TWA. When enabled, it causes the web app to be installed as a Desktop PWA on ChromeOS
+        // but does not provide any native Android interaction.
+        resValue "bool", "useBrowserOnChromeOS", twaManifest.useBrowserOnChromeOS.toString()
     }
     buildTypes {
         release {
@@ -69,5 +75,5 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'com.github.GoogleChrome.custom-tabs-client:customtabs:91b4a1270b'
+    implementation 'com.github.GoogleChrome.custom-tabs-client:customtabs:d9aa8b26f7'
 }
