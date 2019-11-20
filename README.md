@@ -8,7 +8,7 @@ to wrap [HangTime](https://hangtime.stevie-ray.nl/) in an Android Application.
 
 1. Clone the project
 ``
-git clone https://github.com/GoogleChromeLabs/svgomg-twa.git
+git clone https://github.com/Stevie-Ray/hangtime-twa.git
 ``
 
 2. Import the Project into Android Studio, using File > New > Import Project, and select the folder
@@ -23,7 +23,7 @@ on both the application and on the website, in order to enable the validation th
 open the page in full-screen.
 
 For security reasons, the signing key compatible with the setup on
-https://svgomg.firebaseapp.com/ is not committed with the sample code.
+https://hangtime.stevie-ray.nl/ is not committed with the sample code.
 
 It is possible to setup Chrome to skip validation on device to enable testing.
 
@@ -38,11 +38,11 @@ change it to `Enabled`. Restarting the browser *multiple* times may be required.
 2. Create an Android file with the command-line parameters that allow skipping the TWA validation.
 
 Add a file at `/data/local/tmp/chrome-command-line`, with the content
-`_ --disable-digital-asset-link-verification-for-url="https://svgomg.firebaseapp.com"`. Make sure
+`_ --disable-digital-asset-link-verification-for-url="https://hangtime.stevie-ray.nl"`. Make sure
 there's not newline at the end of the line, or it may break the launcher.
 
 For convenience, a shell script that creates this file is available in this repository. Run it
-by executing `./enable-debug.sh https://svgomg.firebaseapp.com`.
+by executing `./enable-debug.sh https://hangtime.stevie-ray.nl`.
 
 To debug a different PWA, execute the script with a different host:
 `./enable-debug.sh https://example.com`
