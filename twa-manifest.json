@@ -1,0 +1,24 @@
+{
+  "packageId": "nl.stevie.ray.hangtime",
+  "host": "hangtime.stevie-ray.nl",
+  "name": "HangTime",
+  "launcherName": "HangTime",
+  "themeColor": "#012E40",
+  "navigationColor": "#012E40",
+  "backgroundColor": "#012E40",
+  "enableNotifications": false,
+  "startUrl": "/",
+  "iconUrl": "https://hangtime.stevie-ray.nl/img/icons/android-chrome-512x512.png",
+  "splashScreenFadeOutDuration": 300,
+  "signingKey": {
+    "alias": "android",
+    "path": "./android.keystore"
+  },
+  "appVersionName": "0.9.11",
+  "appVersionCode": 19000911,
+  "shortcuts": [],
+  "generatorApp": "bubblewrap-cli",
+  "webManifestUrl": "https://hangtime.stevie-ray.nl/manifest.json",
+  "fallbackType": "customtabs",
+  "appVersion": "0.9.11"
+}

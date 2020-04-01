@@ -4,86 +4,77 @@ This project uses the
 [Trusted Web Activities](https://developers.google.com/web/updates/2017/10/using-twa) technology
 to wrap [HangTime](https://hangtime.stevie-ray.nl/) in an Android Application.
 
-## Running the Demo
+## Requirements
+- [Node.js](https://nodejs.org/en/) 10.0 or above
 
-1. Clone the project
-``
-git clone https://github.com/Stevie-Ray/hangtime-twa.git
-``
+## Setting up the Environment
 
-2. Import the Project into Android Studio, using File > New > Import Project, and select the folder
-to which the project was cloned.
+### Get the Java Development Kit (JDK) 8.
+The Android Command line tools requires the correct version of the JDK to run. To prevent version
+conflicts with a JDK version that is already installed, Bubblewrap uses a JDK that can unzipped in
+a separate folder.
 
-3. Run the Project (Ctrl+R)
+Download a version of JDK 8 that is compatible with your OS from
+[AdoptOpenJDK](https://adoptopenjdk.net/releases.html?variant=openjdk8&jvmVariant=hotspot)
+and extract it in its own folder.
 
-### Enabling Debug
+**Warning:** Using a version lower than 8 will make it impossible to compile the project and higher
+versions are incompatible with the Android command line tools.
 
-TWAs require [Digital AssetLinks](https://developers.google.com/digital-asset-links/) to be setup
-on both the application and on the website, in order to enable the validation that allows Chrome to
-open the page in full-screen.
+### Get the Android command line tools
+Download a version of Android command line tools that is compatible with your OS from
+[https://developer.android.com/studio#command-tools](https://developer.android.com/studio#command-tools).
+Create a folder and extract the downloaded file into it.
 
-For security reasons, the signing key compatible with the setup on
-https://hangtime.stevie-ray.nl/ is not committed with the sample code.
+## Using Bubblewrap
 
-It is possible to setup Chrome to skip validation on device to enable testing.
+### Installing Bubblewrap
 
-Here are the 2 steps required to achieve this:
-
-1. Enable Chrome to accept command-line parameters:
-
-On the Android Device, go to the Chrome version being used to test the TWA and navigate to
-`chrome://flags`. Search for a setting called `Enable commmand line on non-rooted devices` and
-change it to `Enabled`. Restarting the browser *multiple* times may be required.
-
-2. Create an Android file with the command-line parameters that allow skipping the TWA validation.
-
-Add a file at `/data/local/tmp/chrome-command-line`, with the content
-`_ --disable-digital-asset-link-verification-for-url="https://hangtime.stevie-ray.nl"`. Make sure
-there's not newline at the end of the line, or it may break the launcher.
-
-For convenience, a shell script that creates this file is available in this repository. Run it
-by executing `./enable-debug.sh https://hangtime.stevie-ray.nl`.
-
-To debug a different PWA, execute the script with a different host:
-`./enable-debug.sh https://example.com`
-
-### Debugging Digital Asset Links
-
-As the debug certificate is different from the release one, and the fingerprint for debug should not be listed on the assetlinks.json file, is important to check if your Digital Asset Link is linked and verified.
-
-After you generated your [signed APK](https://developer.android.com/studio/publish/app-signing#sign-apk). it can be installed into a test device, using adb:
-
-``
-adb install app-release.apk
-``
-
-If the verification step fails it is possible to check for error messages using the Android Debug Bridge, from your OS’s terminal and with the test device connected.
-
-``
-adb logcat | grep -e OriginVerifier -e digital_asset_links
-``
-
-If it is failing you'll see ``Statement failure matching fingerprint. Verification failed.`` message. Therefore is important to *review* *AndroidManifest.xml* and *build.gradle* files and check if the configurations are matching with the *assetlinks.json*.
-
-Otherwise ``Verification succeeded.`` message should appear.
-
-## License
-
+```shell
+npm i -g @bubblewrap/cli
 ```
-Copyright 2015 Google, Inc.
 
-Licensed to the Apache Software Foundation (ASF) under one or more contributor
-license agreements. See the NOTICE file distributed with this work for
-additional information regarding copyright ownership. The ASF licenses this
-file to you under the Apache License, Version 2.0 (the "License"); you may not
-use this file except in compliance with the License. You may obtain a copy of
-the License at
+### Initializing an Android Project
+Generate an Android project from an existing Web Manifest:
 
-http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
-WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
-License for the specific language governing permissions and limitations under
-the License.
+```shell
+bubblewrap init --manifest https://hangtime.stevie-ray.nl/manifest.json
 ```
+
+When initalizing a project, Bubblewrap will download the Web Manifest and ask you to confirm
+the values that should be used when building the Android project.
+
+It will also ask you for the details needed to generate a signing key, used to sign the
+app before uploading to the Play Store.
+
+OpenJDK 14 (Latest) / Hotspot: jdk-14+36 - AdoptOpenJDK macOS
+
+*Path to the JDK:* 
+`/Library/Java/JavaVirtualMachines/adoptopenjdk-14.jdk`
+
+*Path to the Android SDK:* 
+`/Users/stevie-ray/Sites/hangtime-twa/` or
+`/Users/stevie-ray/Library/Android/sdk`
+
+### Building the Android Project
+```shell
+bubblewrap build
+```
+
+#### Grade issue: 
+in `gradle/wrapper/gradle-wrapper.properties` set: `distributionUrl=https\://services.gradle.org/distributions/gradle-6.3-all.zip`
+
+#### Build issues: 
+Change config after init: `/Users/stevie-ray/.llama-pack/llama-pack-config.json`
+
+
+
+When building the project for the first time, the Android Build Tools will need to be installed.
+The tool will invoke the installation process for the build tools. Make sure to read and accept
+the license agreement before proceeding.
+
+As a result of the build step, the tool will generate a signed APK (`app-release-signed.apk`)
+that can be uploaded to the Play Store. You will also need to deploy a Digital Asset Links file to
+validate your domain. The
+[TWA Quick Start Guide](https://developers.google.com/web/updates/2019/08/twas-quickstart#creating-your-asset-link-file)
+explains how to extract the information needed to generate it.

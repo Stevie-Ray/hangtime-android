@@ -20,7 +20,9 @@
      application, the package attribute will need to reflect the correct path in order to use
      the abbreviated format. -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.placeholder">
+    package="nl.stevie.ray.hangtime">
+
+    
 
     <application
         android:allowBackup="true"
@@ -32,12 +34,19 @@
         <meta-data
             android:name="asset_statements"
             android:resource="@string/assetStatements" />
+
+        
+            <meta-data
+                android:name="web_manifest_url"
+                android:value="@string/webManifestUrl" />
+        
+
         <meta-data
-            android:name="cros_web_alternative"
-            android:value="@string/crosLaunchUrl" />
+            android:name="twa_generator"
+            android:value="@string/generatorApp" />            
 
         <activity android:name="com.google.androidbrowserhelper.trusted.LauncherActivity"
-            android:label="@string/appName">
+            android:label="@string/launcherName">
             <meta-data android:name="android.support.customtabs.trusted.DEFAULT_URL"
                 android:value="@string/launchUrl" />
 
@@ -63,6 +72,9 @@
 
             <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcuts" />
 
+            <meta-data android:name="android.support.customtabs.trusted.FALLBACK_STRATEGY"
+                android:value="@string/fallbackType" />
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -75,10 +87,12 @@
                 <data android:scheme="https"
                     android:host="@string/hostName"/>
             </intent-filter>
-
         </activity>
 
         <activity android:name="com.google.androidbrowserhelper.trusted.FocusActivity" />
+
+        <activity android:name="com.google.androidbrowserhelper.trusted.WebViewFallbackActivity"
+            android:configChanges="orientation|screenSize" />
 
         <provider
             android:name="androidx.core.content.FileProvider"
@@ -91,15 +105,15 @@
         </provider>
 
         <service
-            android:name="com.google.androidbrowserhelper.trusted.DelegationService"
-            android:enabled="@bool/enableNotification"
-            android:exported="@bool/enableNotification">
+             android:name="com.google.androidbrowserhelper.trusted.DelegationService"
+             android:enabled="@bool/enableNotification"
+             android:exported="@bool/enableNotification">
 
-            <intent-filter>
-                <action android:name="android.support.customtabs.trusted.TRUSTED_WEB_ACTIVITY_SERVICE"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-        </service>
+             <intent-filter>
+                 <action android:name="android.support.customtabs.trusted.TRUSTED_WEB_ACTIVITY_SERVICE"/>
+                 <category android:name="android.intent.category.DEFAULT"/>
+             </intent-filter>
+         </service>
 
     </application>
 </manifest>
