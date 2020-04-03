@@ -33,7 +33,7 @@ def twaManifest = [
     // - short_name: Shorter string used if |name| is too long.
     // - url: Absolute path of the URL to launch the app with (e.g '/create').
     // - icon: Name of the resource in the drawable folder to use as an icon.
-    shortcuts: [],
+    shortcuts: [[name:'Workouts', short_name:'Workouts', url:'https://hangtime.stevie-ray.nl/', icon:'shortcut_0'],[name:'Community', short_name:'Community', url:'https://hangtime.stevie-ray.nl/community', icon:'shortcut_1'],[name:'Progress', short_name:'Progress', url:'https://hangtime.stevie-ray.nl/progress', icon:'shortcut_2']],
     // The duration of fade out animation in milliseconds to be played when removing splash screen.
     splashScreenFadeOutDuration: 300,
     generatorApp: 'bubblewrap-cli', // Application that generated the Android Project
@@ -48,8 +48,8 @@ android {
         applicationId "nl.stevie.ray.hangtime"
         minSdkVersion 19
         targetSdkVersion 29
-        versionCode 19000911
-        versionName "0.9.11"
+        versionCode 19000912
+        versionName "0.9.12"
 
         // The name for the application
         resValue "string", "appName", twaManifest.name

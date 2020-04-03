@@ -9,16 +9,36 @@
   "enableNotifications": false,
   "startUrl": "/",
   "iconUrl": "https://hangtime.stevie-ray.nl/img/icons/android-chrome-512x512.png",
+  "maskableIconUrl": "https://hangtime.stevie-ray.nl/img/icons/android-chrome-maskable-512x512.png",
   "splashScreenFadeOutDuration": 300,
   "signingKey": {
     "alias": "android",
     "path": "./android.keystore"
   },
-  "appVersionName": "0.9.11",
-  "appVersionCode": 19000911,
-  "shortcuts": [],
+  "appVersionName": "0.9.12",
+  "appVersionCode": 19000912,
+  "shortcuts": [
+    {
+      "name": "Workouts",
+      "shortName": "Workouts",
+      "url": "https://hangtime.stevie-ray.nl/",
+      "chosenIconUrl": "https://hangtime.stevie-ray.nl/img/icons/plus.png"
+    },
+    {
+      "name": "Community",
+      "shortName": "Community",
+      "url": "https://hangtime.stevie-ray.nl/community",
+      "chosenIconUrl": "https://hangtime.stevie-ray.nl/img/icons/plus.png"
+    },
+    {
+      "name": "Progress",
+      "shortName": "Progress",
+      "url": "https://hangtime.stevie-ray.nl/progress",
+      "chosenIconUrl": "https://hangtime.stevie-ray.nl/img/icons/plus.png"
+    }
+  ],
   "generatorApp": "bubblewrap-cli",
   "webManifestUrl": "https://hangtime.stevie-ray.nl/manifest.json",
   "fallbackType": "customtabs",
-  "appVersion": "0.9.11"
+  "appVersion": "0.9.12"
 }

@@ -26,6 +26,22 @@ Download a version of Android command line tools that is compatible with your OS
 [https://developer.android.com/studio#command-tools](https://developer.android.com/studio#command-tools).
 Create a folder and extract the downloaded file into it.
 
+### Updating the location of the JDK and / or the Android command line tools.
+If the location for the JDK or the Android command line tools have been setup with the wrong path or
+if their location has changed after the initial configuration, the location for either of those can
+be changed by editing the configuration file at `${USER_HOME}/.llama-pack/llama-pack-config.json`.
+
+Settings used: `OpenJDK 14 (Latest) / Hotspot: jdk-14+36 - AdoptOpenJDK macOS`
+
+llama-pack-config:
+```json
+{
+  "jdkPath": "/Library/Java/JavaVirtualMachines/adoptopenjdk-14.jdk",
+  "androidSdkPath": "/Users/stevie-ray/Library/Android/sdk"
+}
+
+```
+
 ## Using Bubblewrap
 
 ### Installing Bubblewrap
@@ -47,27 +63,13 @@ the values that should be used when building the Android project.
 It will also ask you for the details needed to generate a signing key, used to sign the
 app before uploading to the Play Store.
 
-OpenJDK 14 (Latest) / Hotspot: jdk-14+36 - AdoptOpenJDK macOS
-
-*Path to the JDK:* 
-`/Library/Java/JavaVirtualMachines/adoptopenjdk-14.jdk`
-
-*Path to the Android SDK:* 
-`/Users/stevie-ray/Sites/hangtime-twa/` or
-`/Users/stevie-ray/Library/Android/sdk`
-
 ### Building the Android Project
 ```shell
 bubblewrap build
 ```
 
-#### Grade issue: 
-in `gradle/wrapper/gradle-wrapper.properties` set: `distributionUrl=https\://services.gradle.org/distributions/gradle-6.3-all.zip`
-
-#### Build issues: 
-Change config after init: `/Users/stevie-ray/.llama-pack/llama-pack-config.json`
-
-
+#### OpenJDK 14 / Gradle support issue: 
+in `gradle/wrapper/gradle-wrapper.properties` set: `distributionUrl=https\://services.gradle.org/distributions/gradle-6.3-all.zip` to support `adoptopenjdk-14` 
 
 When building the project for the first time, the Android Build Tools will need to be installed.
 The tool will invoke the installation process for the build tools. Make sure to read and accept
