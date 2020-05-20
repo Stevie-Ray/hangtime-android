@@ -61,12 +61,12 @@ android {
         def launchUrl = "https://" + twaManifest.hostName + twaManifest.launchUrl
         resValue "string", "launchUrl", launchUrl
 
-
+        
             // The URL the Web Manifest for the Progressive Web App that the TWA points to. This
             // is used by Chrome OS to open the Web version of the PWA instead of the TWA, as it
             // will probably give a better user experience for non-mobile devices.
             resValue "string", "webManifestUrl", 'https://hangtime.stevie-ray.nl/manifest.json'
-
+        
 
         // The hostname is used when building the intent-filter, so the TWA is able to
         // handle Intents to open https://svgomg.firebaseapp.com.
@@ -166,5 +166,5 @@ preBuild.dependsOn(generateShorcutsFile)
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'com.google.androidbrowserhelper:androidbrowserhelper:1.2.0'
+    implementation 'com.google.androidbrowserhelper:androidbrowserhelper:1.3.0'
 }
