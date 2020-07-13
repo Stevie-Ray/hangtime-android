@@ -1,0 +1,5 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target" : { "namespace": "android_app", "package_name": "nl.stevie.ray.hangtime",
+                   "sha256_cert_fingerprints": ["04:7B:BC:47:B7:3C:87:A9:7F:FA:1E:5F:27:BD:33:4D:3F:B7:0D:91:35:3D:04:FF:56:22:43:F8:FC:59:4C:C0"] }
+    }]

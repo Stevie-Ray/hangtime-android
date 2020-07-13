@@ -3,6 +3,7 @@
   "host": "hangtime.stevie-ray.nl",
   "name": "HangTime",
   "launcherName": "HangTime",
+  "display": "standalone",
   "themeColor": "#012E40",
   "navigationColor": "#012E40",
   "backgroundColor": "#012E40",
