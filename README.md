@@ -36,7 +36,7 @@ Settings used: `OpenJDK 14 (Latest) / Hotspot: jdk-14+36 - AdoptOpenJDK macOS`
 llama-pack-config:
 ```json
 {
-  "jdkPath": "/Library/Java/JavaVirtualMachines/adoptopenjdk-14.jdk",
+  "jdkPath": "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk",
   "androidSdkPath": "/Users/stevie-ray/Library/Android/sdk"
 }
 

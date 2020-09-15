@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Google Inc.
+ * Copyright 2020 Google Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,30 +13,22 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+package nl.stevie.ray.hangime.nl;
 
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
+import android.net.Uri;
 
-buildscript {
 
-    repositories {
-        google()
-        jcenter()
+
+public class LauncherActivity
+        extends com.google.androidbrowserhelper.trusted.LauncherActivity {
+
+    @Override
+    protected Uri getLaunchingUrl() {
+        // Get the original launch Url.
+        Uri uri = super.getLaunchingUrl();
+
+        
+
+        return uri;
     }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:4.0.1'
-
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
-    }
-}
-
-allprojects {
-    repositories {
-        google()
-        jcenter()
-    }
-}
-
-task clean(type: Delete) {
-    delete rootProject.buildDir
 }

@@ -6,40 +6,46 @@
   "display": "standalone",
   "themeColor": "#012E40",
   "navigationColor": "#012E40",
+  "navigationColorDark": "#000000",
+  "navigationDividerColor": "#000000",
+  "navigationDividerColorDark": "#000000",
   "backgroundColor": "#012E40",
   "enableNotifications": false,
-  "startUrl": "/",
+  "startUrl": "/?utm_source=homescreen",
   "iconUrl": "https://hangtime.stevie-ray.nl/img/icons/android-chrome-512x512.png",
   "maskableIconUrl": "https://hangtime.stevie-ray.nl/img/icons/android-chrome-maskable-512x512.png",
   "splashScreenFadeOutDuration": 300,
   "signingKey": {
-    "alias": "android",
-    "path": "./android.keystore"
+    "path": "./android.keystore",
+    "alias": "android"
   },
-  "appVersionName": "0.9.13",
-  "appVersionCode": 19000913,
+  "appVersionName": "0.9.14",
+  "appVersionCode": 19000914,
   "shortcuts": [
     {
       "name": "Workouts",
       "shortName": "Workouts",
-      "url": "https://hangtime.stevie-ray.nl/",
+      "url": "https://hangtime.stevie-ray.nl/?utm_source=shortcut",
       "chosenIconUrl": "https://hangtime.stevie-ray.nl/img/icons/android-shortcut-512x512.png"
     },
     {
       "name": "Community",
       "shortName": "Community",
-      "url": "https://hangtime.stevie-ray.nl/community",
+      "url": "https://hangtime.stevie-ray.nl/community?utm_source=shortcut",
       "chosenIconUrl": "https://hangtime.stevie-ray.nl/img/icons/android-shortcut-512x512.png"
     },
     {
       "name": "Progress",
       "shortName": "Progress",
-      "url": "https://hangtime.stevie-ray.nl/progress",
+      "url": "https://hangtime.stevie-ray.nl/progress?utm_source=shortcut",
       "chosenIconUrl": "https://hangtime.stevie-ray.nl/img/icons/android-shortcut-512x512.png"
     }
   ],
   "generatorApp": "bubblewrap-cli",
   "webManifestUrl": "https://hangtime.stevie-ray.nl/manifest.json",
   "fallbackType": "customtabs",
-  "appVersion": "0.9.13"
+  "features": {},
+  "enableSiteSettingsShortcut": true,
+  "isChromeOSOnly": false,
+  "appVersion": "0.9.14"
 }
