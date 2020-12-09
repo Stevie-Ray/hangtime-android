@@ -58,8 +58,9 @@
                 android:value="@string/launchUrl" />
             </activity>
         
-        
+
         <activity android:name="LauncherActivity"
+            android:screenOrientation="unspecified"
             android:label="@string/launcherName">
             <meta-data android:name="android.support.customtabs.trusted.DEFAULT_URL"
                 android:value="@string/launchUrl" />
@@ -102,6 +103,14 @@
                 android:value="@string/fallbackType" />
 
             
+
+            
+
+            <meta-data android:name="android.support.customtabs.trusted.SCREEN_ORIENTATION"
+                android:value="@string/orientation"/>
+
+            
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -132,7 +141,7 @@
         </provider>
 
         <service
-            android:name="com.google.androidbrowserhelper.trusted.DelegationService"
+            android:name=".DelegationService"
             android:enabled="@bool/enableNotification"
             android:exported="@bool/enableNotification">
 
