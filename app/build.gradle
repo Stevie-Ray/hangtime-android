@@ -26,11 +26,11 @@ def twaManifest = [
     launcherName: 'HangTime', // The name shown on the Android Launcher.
     themeColor: '#012E40', // The color used for the status bar.
     navigationColor: '#012E40', // The color used for the navigation bar.
-    navigationColorDark: '#000000', // The color used for the dark navbar.
-    navigationDividerColor: '#000000', // The navbar divider color.
-    navigationDividerColorDark: '#000000', // The dark navbar divider color.
+    navigationColorDark: '#012E40', // The color used for the dark navbar.
+    navigationDividerColor: '#012E40', // The navbar divider color.
+    navigationDividerColorDark: '#012E40', // The dark navbar divider color.
     backgroundColor: '#012E40', // The color used for the splash screen background.
-    enableNotifications: false, // Set to true to enable notification delegation.
+    enableNotifications: true, // Set to true to enable notification delegation.
     // Every shortcut must include the following fields:
     // - name: String that will show up in the shortcut.
     // - short_name: Shorter string used if |name| is too long.
@@ -53,8 +53,8 @@ android {
         applicationId "nl.stevie.ray.hangtime"
         minSdkVersion 19
         targetSdkVersion 29
-        versionCode 19000915
-        versionName "0.9.15"
+        versionCode 19000916
+        versionName "0.9.16"
 
         // The name for the application
         resValue "string", "appName", twaManifest.name

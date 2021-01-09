@@ -6,11 +6,11 @@
   "display": "standalone",
   "themeColor": "#012E40",
   "navigationColor": "#012E40",
-  "navigationColorDark": "#000000",
-  "navigationDividerColor": "#000000",
-  "navigationDividerColorDark": "#000000",
+  "navigationColorDark": "#012E40",
+  "navigationDividerColor": "#012E40",
+  "navigationDividerColorDark": "#012E40",
   "backgroundColor": "#012E40",
-  "enableNotifications": false,
+  "enableNotifications": true,
   "startUrl": "/?utm_source=homescreen",
   "iconUrl": "https://hangtime.stevie-ray.nl/img/icons/android-chrome-512x512.png",
   "maskableIconUrl": "https://hangtime.stevie-ray.nl/img/icons/android-chrome-maskable-512x512.png",
@@ -19,8 +19,8 @@
     "path": "./android.keystore",
     "alias": "android"
   },
-  "appVersionName": "0.9.15",
-  "appVersionCode": 19000915,
+  "appVersionName": "0.9.16",
+  "appVersionCode": 19000916,
   "shortcuts": [
     {
       "name": "Workouts",
@@ -51,5 +51,5 @@
   "enableSiteSettingsShortcut": true,
   "isChromeOSOnly": false,
   "orientation": "default",
-  "appVersion": "0.9.15"
+  "appVersion": "0.9.16"
 }
