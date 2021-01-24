@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "nl.stevie.ray.hangtime",
+  "variantName": "release",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "properties": [],
+      "versionCode": 19000917,
+      "versionName": "19000917",
+      "enabled": true,
+      "outputFile": "app-release-unsigned.apk"
+    }
+  ]
+}

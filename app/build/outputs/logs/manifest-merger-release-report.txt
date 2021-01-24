@@ -1,0 +1,331 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:22:1-184:12
+INJECTED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:22:1-184:12
+INJECTED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:22:1-184:12
+INJECTED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:22:1-184:12
+MERGED from [com.google.androidbrowserhelper:billing:1.0.0-alpha05] /Users/stevie-ray/.gradle/caches/transforms-2/files-2.1/3dd4e137aec71ffb4ca8af91009464c9/billing-1.0.0-alpha05/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.androidbrowserhelper:androidbrowserhelper:2.1.0] /Users/stevie-ray/.gradle/caches/transforms-2/files-2.1/98a8daf4f409d28473f7d4f908ca4498/androidbrowserhelper-2.1.0/AndroidManifest.xml:17:1-36:12
+MERGED from [com.android.billingclient:billing:3.0.1] /Users/stevie-ray/.gradle/caches/transforms-2/files-2.1/c6c55829a0b91f519ecf41800c4a23b7/billing-3.0.1/AndroidManifest.xml:2:1-24:12
+MERGED from [androidx.browser:browser:1.3.0] /Users/stevie-ray/.gradle/caches/transforms-2/files-2.1/c1f8f1c7d9322fb01554c7bd92d0eaca/browser-1.3.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.1.0] /Users/stevie-ray/.gradle/caches/transforms-2/files-2.1/03736cf4bc3669a69d502627b70a527e/core-1.1.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/stevie-ray/.gradle/caches/transforms-2/files-2.1/3c1a5ebf565097fe10667d6b9a2c1703/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/stevie-ray/.gradle/caches/transforms-2/files-2.1/3e5d045fdd42de39d437ce94a2ff87c7/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/stevie-ray/.gradle/caches/transforms-2/files-2.1/5dfc3e4de70e0708bf5b8273f949e79c/lifecycle-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:22:1-184:12
+INJECTED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:22:1-184:12
+INJECTED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:22:1-184:12
+	package
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:23:5-37
+		INJECTED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:22:1-184:12
+		INJECTED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:22:1-184:12
+		INJECTED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:22:11-69
+application
+ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:29:5-183:19
+MERGED from [com.android.billingclient:billing:3.0.1] /Users/stevie-ray/.gradle/caches/transforms-2/files-2.1/c6c55829a0b91f519ecf41800c4a23b7/billing-3.0.1/AndroidManifest.xml:12:5-22:19
+MERGED from [com.android.billingclient:billing:3.0.1] /Users/stevie-ray/.gradle/caches/transforms-2/files-2.1/c6c55829a0b91f519ecf41800c4a23b7/billing-3.0.1/AndroidManifest.xml:12:5-22:19
+MERGED from [androidx.core:core:1.1.0] /Users/stevie-ray/.gradle/caches/transforms-2/files-2.1/03736cf4bc3669a69d502627b70a527e/core-1.1.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0] /Users/stevie-ray/.gradle/caches/transforms-2/files-2.1/03736cf4bc3669a69d502627b70a527e/core-1.1.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/stevie-ray/.gradle/caches/transforms-2/files-2.1/3c1a5ebf565097fe10667d6b9a2c1703/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/stevie-ray/.gradle/caches/transforms-2/files-2.1/3c1a5ebf565097fe10667d6b9a2c1703/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.1.0] /Users/stevie-ray/.gradle/caches/transforms-2/files-2.1/03736cf4bc3669a69d502627b70a527e/core-1.1.0/AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:37:9-35
+	android:label
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:33:9-40
+	android:manageSpaceActivity
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:35:9-105
+	android:icon
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:32:9-43
+	android:allowBackup
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:31:9-35
+	android:theme
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:38:9-68
+	android:name
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:30:9-35
+meta-data#asset_statements
+ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:40:9-42:58
+	android:resource
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:42:13-55
+	android:name
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:41:13-44
+meta-data#web_manifest_url
+ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:45:13-47:58
+	android:value
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:47:17-55
+	android:name
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:46:17-48
+meta-data#twa_generator
+ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:50:9-52:52
+	android:value
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:52:13-49
+	android:name
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:51:13-41
+activity#com.google.androidbrowserhelper.trusted.ManageDataLauncherActivity
+ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:55:13-59:24
+	android:name
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:55:23-104
+meta-data#android.support.customtabs.trusted.MANAGE_SPACE_URL
+ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:56:13-58:53
+	android:value
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:58:17-50
+	android:name
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:57:17-83
+activity#nl.stevie.ray.hangtime.LauncherActivity
+ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:62:9-127:20
+	android:screenOrientation
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:63:13-52
+	android:label
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:65:13-49
+	android:alwaysRetainTaskState
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:64:13-49
+	android:name
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:62:19-50
+meta-data#android.support.customtabs.trusted.DEFAULT_URL
+ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:66:13-67:53
+	android:value
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:67:17-50
+	android:name
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:66:24-85
+meta-data#android.support.customtabs.trusted.STATUS_BAR_COLOR
+ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:69:13-71:58
+	android:resource
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:71:17-55
+	android:name
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:70:17-83
+meta-data#android.support.customtabs.trusted.NAVIGATION_BAR_COLOR
+ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:73:13-75:61
+	android:resource
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:75:17-58
+	android:name
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:74:17-87
+meta-data#android.support.customtabs.trusted.NAVIGATION_BAR_COLOR_DARK
+ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:77:13-79:65
+	android:resource
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:79:17-62
+	android:name
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:78:17-92
+meta-data#androix.browser.trusted.NAVIGATION_BAR_DIVIDER_COLOR
+ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:81:13-83:68
+	android:resource
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:83:17-65
+	android:name
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:82:17-84
+meta-data#androix.browser.trusted.NAVIGATION_BAR_DIVIDER_COLOR_DARK
+ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:85:13-87:72
+	android:resource
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:87:17-69
+	android:name
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:86:17-89
+meta-data#android.support.customtabs.trusted.SPLASH_IMAGE_DRAWABLE
+ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:89:13-90:54
+	android:resource
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:90:17-52
+	android:name
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:89:24-95
+meta-data#android.support.customtabs.trusted.SPLASH_SCREEN_BACKGROUND_COLOR
+ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:92:13-93:60
+	android:resource
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:93:17-58
+	android:name
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:92:24-104
+meta-data#android.support.customtabs.trusted.SPLASH_SCREEN_FADE_OUT_DURATION
+ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:95:13-96:71
+	android:value
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:96:17-69
+	android:name
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:95:24-105
+meta-data#android.support.customtabs.trusted.FILE_PROVIDER_AUTHORITY
+ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:98:13-99:60
+	android:value
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:99:17-58
+	android:name
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:98:24-97
+meta-data#android.app.shortcuts
+ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:101:13-97
+	android:resource
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:101:61-94
+	android:name
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:101:24-60
+meta-data#android.support.customtabs.trusted.FALLBACK_STRATEGY
+ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:103:13-104:56
+	android:value
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:104:17-53
+	android:name
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:103:24-91
+meta-data#android.support.customtabs.trusted.SCREEN_ORIENTATION
+ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:110:13-111:54
+	android:value
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:111:17-52
+	android:name
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:110:24-92
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:115:13-118:29
+action#android.intent.action.MAIN
+ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:116:17-69
+	android:name
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:116:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:117:17-77
+	android:name
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:117:27-74
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:@string/hostName+data:scheme:https
+ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:120:13-126:29
+	android:autoVerify
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:120:28-53
+action#android.intent.action.VIEW
+ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:121:17-68
+	android:name
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:121:25-66
+category#android.intent.category.DEFAULT
+ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:122:17-76
+	android:name
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:122:27-73
+category#android.intent.category.BROWSABLE
+ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:123:17-77
+	android:name
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:123:27-75
+data
+ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:124:17-125:54
+	android:host
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:125:21-52
+	android:scheme
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:124:23-45
+activity#com.google.androidbrowserhelper.trusted.FocusActivity
+ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:129:9-90
+	android:name
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:129:19-87
+activity#com.google.androidbrowserhelper.trusted.WebViewFallbackActivity
+ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:131:9-132:62
+	android:configChanges
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:132:13-59
+	android:name
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:131:19-97
+provider#androidx.core.content.FileProvider
+ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:134:9-142:20
+	android:grantUriPermissions
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:137:13-47
+	android:authorities
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:136:13-60
+	android:exported
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:138:13-37
+	android:name
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:135:13-62
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:139:13-141:53
+	android:resource
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:141:17-50
+	android:name
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:140:17-67
+service#nl.stevie.ray.hangtime.DelegationService
+ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:144:9-155:19
+	android:enabled
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:146:13-55
+	android:exported
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:147:13-56
+	android:name
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:145:13-46
+intent-filter#action:name:android.support.customtabs.trusted.TRUSTED_WEB_ACTIVITY_SERVICE+category:name:android.intent.category.DEFAULT
+ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:151:13-154:29
+action#android.support.customtabs.trusted.TRUSTED_WEB_ACTIVITY_SERVICE
+ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:152:17-105
+	android:name
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:152:25-103
+activity#com.google.androidbrowserhelper.playbilling.provider.PaymentActivity
+ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:159:9-172:20
+	android:exported
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:163:13-36
+	android:configChanges
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:162:13-96
+	android:theme
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:161:13-72
+	android:name
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:160:13-96
+intent-filter#action:name:org.chromium.intent.action.PAY
+ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:165:13-167:29
+action#org.chromium.intent.action.PAY
+ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:166:17-73
+	android:name
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:166:25-70
+meta-data#org.chromium.default_payment_method_name
+ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:169:13-171:67
+	android:value
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:171:17-64
+	android:name
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:170:17-72
+service#com.google.androidbrowserhelper.playbilling.provider.PaymentService
+ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:175:9-181:19
+	android:exported
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:177:13-36
+	android:name
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:176:13-95
+intent-filter#action:name:org.chromium.intent.action.IS_READY_TO_PAY
+ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:178:13-180:29
+action#org.chromium.intent.action.IS_READY_TO_PAY
+ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:179:17-85
+	android:name
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml:179:25-82
+uses-sdk
+INJECTED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml
+INJECTED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml
+MERGED from [com.google.androidbrowserhelper:billing:1.0.0-alpha05] /Users/stevie-ray/.gradle/caches/transforms-2/files-2.1/3dd4e137aec71ffb4ca8af91009464c9/billing-1.0.0-alpha05/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.androidbrowserhelper:billing:1.0.0-alpha05] /Users/stevie-ray/.gradle/caches/transforms-2/files-2.1/3dd4e137aec71ffb4ca8af91009464c9/billing-1.0.0-alpha05/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.androidbrowserhelper:androidbrowserhelper:2.1.0] /Users/stevie-ray/.gradle/caches/transforms-2/files-2.1/98a8daf4f409d28473f7d4f908ca4498/androidbrowserhelper-2.1.0/AndroidManifest.xml:22:5-24:41
+MERGED from [com.google.androidbrowserhelper:androidbrowserhelper:2.1.0] /Users/stevie-ray/.gradle/caches/transforms-2/files-2.1/98a8daf4f409d28473f7d4f908ca4498/androidbrowserhelper-2.1.0/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.billingclient:billing:3.0.1] /Users/stevie-ray/.gradle/caches/transforms-2/files-2.1/c6c55829a0b91f519ecf41800c4a23b7/billing-3.0.1/AndroidManifest.xml:6:5-8:41
+MERGED from [com.android.billingclient:billing:3.0.1] /Users/stevie-ray/.gradle/caches/transforms-2/files-2.1/c6c55829a0b91f519ecf41800c4a23b7/billing-3.0.1/AndroidManifest.xml:6:5-8:41
+MERGED from [androidx.browser:browser:1.3.0] /Users/stevie-ray/.gradle/caches/transforms-2/files-2.1/c1f8f1c7d9322fb01554c7bd92d0eaca/browser-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.3.0] /Users/stevie-ray/.gradle/caches/transforms-2/files-2.1/c1f8f1c7d9322fb01554c7bd92d0eaca/browser-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] /Users/stevie-ray/.gradle/caches/transforms-2/files-2.1/03736cf4bc3669a69d502627b70a527e/core-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] /Users/stevie-ray/.gradle/caches/transforms-2/files-2.1/03736cf4bc3669a69d502627b70a527e/core-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/stevie-ray/.gradle/caches/transforms-2/files-2.1/3c1a5ebf565097fe10667d6b9a2c1703/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/stevie-ray/.gradle/caches/transforms-2/files-2.1/3c1a5ebf565097fe10667d6b9a2c1703/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/stevie-ray/.gradle/caches/transforms-2/files-2.1/3e5d045fdd42de39d437ce94a2ff87c7/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/stevie-ray/.gradle/caches/transforms-2/files-2.1/3e5d045fdd42de39d437ce94a2ff87c7/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/stevie-ray/.gradle/caches/transforms-2/files-2.1/5dfc3e4de70e0708bf5b8273f949e79c/lifecycle-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/stevie-ray/.gradle/caches/transforms-2/files-2.1/5dfc3e4de70e0708bf5b8273f949e79c/lifecycle-runtime-2.0.0/AndroidManifest.xml:20:5-44
+INJECTED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml
+INJECTED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml
+		ADDED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/stevie-ray/Sites/hangtime-twa/app/src/main/AndroidManifest.xml
+queries
+ADDED from [com.google.androidbrowserhelper:androidbrowserhelper:2.1.0] /Users/stevie-ray/.gradle/caches/transforms-2/files-2.1/98a8daf4f409d28473f7d4f908ca4498/androidbrowserhelper-2.1.0/AndroidManifest.xml:26:5-34:15
+intent
+ADDED from [com.google.androidbrowserhelper:androidbrowserhelper:2.1.0] /Users/stevie-ray/.gradle/caches/transforms-2/files-2.1/98a8daf4f409d28473f7d4f908ca4498/androidbrowserhelper-2.1.0/AndroidManifest.xml:27:9-33:18
+uses-permission#com.android.vending.BILLING
+ADDED from [com.android.billingclient:billing:3.0.1] /Users/stevie-ray/.gradle/caches/transforms-2/files-2.1/c6c55829a0b91f519ecf41800c4a23b7/billing-3.0.1/AndroidManifest.xml:10:5-67
+	android:name
+		ADDED from [com.android.billingclient:billing:3.0.1] /Users/stevie-ray/.gradle/caches/transforms-2/files-2.1/c6c55829a0b91f519ecf41800c4a23b7/billing-3.0.1/AndroidManifest.xml:10:22-64
+meta-data#com.google.android.play.billingclient.version
+ADDED from [com.android.billingclient:billing:3.0.1] /Users/stevie-ray/.gradle/caches/transforms-2/files-2.1/c6c55829a0b91f519ecf41800c4a23b7/billing-3.0.1/AndroidManifest.xml:13:9-15:37
+	android:value
+		ADDED from [com.android.billingclient:billing:3.0.1] /Users/stevie-ray/.gradle/caches/transforms-2/files-2.1/c6c55829a0b91f519ecf41800c4a23b7/billing-3.0.1/AndroidManifest.xml:15:13-34
+	android:name
+		ADDED from [com.android.billingclient:billing:3.0.1] /Users/stevie-ray/.gradle/caches/transforms-2/files-2.1/c6c55829a0b91f519ecf41800c4a23b7/billing-3.0.1/AndroidManifest.xml:14:13-73
+activity#com.android.billingclient.api.ProxyBillingActivity
+ADDED from [com.android.billingclient:billing:3.0.1] /Users/stevie-ray/.gradle/caches/transforms-2/files-2.1/c6c55829a0b91f519ecf41800c4a23b7/billing-3.0.1/AndroidManifest.xml:17:9-21:75
+	android:exported
+		ADDED from [com.android.billingclient:billing:3.0.1] /Users/stevie-ray/.gradle/caches/transforms-2/files-2.1/c6c55829a0b91f519ecf41800c4a23b7/billing-3.0.1/AndroidManifest.xml:20:13-37
+	android:configChanges
+		ADDED from [com.android.billingclient:billing:3.0.1] /Users/stevie-ray/.gradle/caches/transforms-2/files-2.1/c6c55829a0b91f519ecf41800c4a23b7/billing-3.0.1/AndroidManifest.xml:19:13-96
+	android:theme
+		ADDED from [com.android.billingclient:billing:3.0.1] /Users/stevie-ray/.gradle/caches/transforms-2/files-2.1/c6c55829a0b91f519ecf41800c4a23b7/billing-3.0.1/AndroidManifest.xml:21:13-72
+	android:name
+		ADDED from [com.android.billingclient:billing:3.0.1] /Users/stevie-ray/.gradle/caches/transforms-2/files-2.1/c6c55829a0b91f519ecf41800c4a23b7/billing-3.0.1/AndroidManifest.xml:18:13-78

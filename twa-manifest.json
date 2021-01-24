@@ -19,8 +19,8 @@
     "path": "./android.keystore",
     "alias": "android"
   },
-  "appVersionName": "0.9.16",
-  "appVersionCode": 19000916,
+  "appVersionName": "0.9.17",
+  "appVersionCode": 19000917,
   "shortcuts": [
     {
       "name": "Workouts",
@@ -44,12 +44,16 @@
   "generatorApp": "bubblewrap-cli",
   "webManifestUrl": "https://hangtime.stevie-ray.nl/manifest.json",
   "fallbackType": "customtabs",
-  "features": {},
+  "features": {
+    "playBilling": {
+      "enabled": true
+    }
+  },
   "alphaDependencies": {
-    "enabled": false
+    "enabled": true
   },
   "enableSiteSettingsShortcut": true,
   "isChromeOSOnly": false,
   "orientation": "default",
-  "appVersion": "0.9.16"
+  "appVersion": "0.9.17"
 }

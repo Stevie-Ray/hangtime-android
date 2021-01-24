@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "applicationId": "nl.stevie.ray.hangtime",
+  "variantType": "BASE_APK",
+  "elements": [
+    {
+      "outputType": {
+        "type": "INSTANT_APP_MANIFEST"
+      },
+      "apkData": {
+        "type": "MAIN",
+        "splits": [],
+        "versionCode": 19000917,
+        "versionName": "0.9.17",
+        "outputFile": "app-release-unsigned.apk",
+        "fullName": "release",
+        "baseName": "release",
+        "dirName": ""
+      },
+      "path": "AndroidManifest.xml",
+      "properties": {
+        "packageId": "nl.stevie.ray.hangtime",
+        "split": "",
+        "minSdkVersion": "19"
+      }
+    }
+  ]
+}
