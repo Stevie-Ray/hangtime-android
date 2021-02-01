@@ -19,8 +19,8 @@
     "path": "./android.keystore",
     "alias": "android"
   },
-  "appVersionName": "0.9.17",
-  "appVersionCode": 19000917,
+  "appVersionName": "0.9.18",
+  "appVersionCode": 19000918,
   "shortcuts": [
     {
       "name": "Workouts",
@@ -55,5 +55,5 @@
   "enableSiteSettingsShortcut": true,
   "isChromeOSOnly": false,
   "orientation": "default",
-  "appVersion": "0.9.17"
+  "appVersion": "0.9.18"
 }
