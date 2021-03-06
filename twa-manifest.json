@@ -55,5 +55,6 @@
   "enableSiteSettingsShortcut": true,
   "isChromeOSOnly": false,
   "orientation": "default",
+  "fingerprints": [],
   "appVersion": "0.9.18"
 }
