@@ -56,7 +56,7 @@ android {
         applicationId "nl.stevie.ray.hangtime"
         minSdkVersion 19
         targetSdkVersion 30
-        versionCode 19000920
+        versionCode 19000919
         versionName "0.9.19"
 
         // The name for the application
