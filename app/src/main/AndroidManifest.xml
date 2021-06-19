@@ -111,6 +111,8 @@
 
             
 
+            
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -123,6 +125,8 @@
                 <data android:scheme="https"
                     android:host="@string/hostName"/>
             </intent-filter>
+
+            
         </activity>
 
         <activity android:name="com.google.androidbrowserhelper.trusted.FocusActivity" />
@@ -145,6 +149,10 @@
             android:enabled="@bool/enableNotification"
             android:exported="@bool/enableNotification">
 
+            
+                <meta-data
+                    android:name="android.support.customtabs.trusted.SMALL_ICON"
+                    android:resource="@drawable/ic_notification_icon" />
             
 
             <intent-filter>
