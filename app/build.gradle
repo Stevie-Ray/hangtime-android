@@ -195,7 +195,7 @@ repositories {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     
-        implementation 'com.google.androidbrowserhelper:billing:1.0.0-alpha07'
+        implementation 'com.google.androidbrowserhelper:billing:1.0.0-alpha08'
     
         implementation 'com.google.androidbrowserhelper:androidbrowserhelper:2.2.1'
     
