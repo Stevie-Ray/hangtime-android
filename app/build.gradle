@@ -18,7 +18,6 @@ import groovy.xml.MarkupBuilder
 
 plugins {
     id 'com.android.application'
-    
 }
 
 def twaManifest = [
@@ -51,11 +50,11 @@ def twaManifest = [
 ]
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 31
     defaultConfig {
         applicationId "nl.stevie.ray.hangtime"
         minSdkVersion 19
-        targetSdkVersion 30
+        targetSdkVersion 31
         versionCode 19000919
         versionName "0.9.19"
 
@@ -71,9 +70,11 @@ android {
 
         
             // The URL the Web Manifest for the Progressive Web App that the TWA points to. This
-            // is used by Chrome OS to open the Web version of the PWA instead of the TWA, as it
-            // will probably give a better user experience for non-mobile devices.
+            // is used by Chrome OS and Meta Quest to open the Web version of the PWA instead of
+            // the TWA, as it will probably give a better user experience for non-mobile devices.
             resValue "string", "webManifestUrl", 'https://hangtime.stevie-ray.nl/manifest.json'
+        
+
         
 
         
@@ -149,8 +150,6 @@ android {
     }
 }
 
-
-
 task generateShorcutsFile {
     assert twaManifest.shortcuts.size() < 5, "You can have at most 4 shortcuts."
     twaManifest.shortcuts.eachWithIndex { s, i ->
@@ -195,8 +194,8 @@ repositories {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     
-        implementation 'com.google.androidbrowserhelper:billing:1.0.0-alpha08'
+        implementation 'com.google.androidbrowserhelper:billing:1.0.0-alpha09'
     
-        implementation 'com.google.androidbrowserhelper:androidbrowserhelper:2.2.1'
+        implementation 'com.google.androidbrowserhelper:androidbrowserhelper:2.3.0'
     
 }
