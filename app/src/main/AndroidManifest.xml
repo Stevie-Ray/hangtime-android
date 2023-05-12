@@ -23,6 +23,8 @@
     package="nl.stevie.ray.hangtime">
 
     
+        <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    
 
     
 
@@ -169,6 +171,10 @@
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </service>
+
+        
+            <activity android:name="com.google.androidbrowserhelper.trusted.NotificationPermissionRequestActivity" />
+        
 
         
             
