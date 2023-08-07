@@ -20,8 +20,8 @@
     "path": "./android.keystore",
     "alias": "android"
   },
-  "appVersionName": "2.0.0",
-  "appVersionCode": 20000000,
+  "appVersionName": "2.0.1",
+  "appVersionCode": 20000001,
   "shortcuts": [
     {
       "name": "Quick Workout",
@@ -36,7 +36,7 @@
       "shortName": "Workouts",
       "url": "https://hangtime.stevie-ray.nl/?utm_source=shortcut",
       "chosenIconUrl": "https://hangtime.stevie-ray.nl/img/icons/android-shortcut-512x512.png",
-      "chosenMaskableIconUrl":  "https://hangtime.stevie-ray.nl/img/icons/android-chrome-maskable-512x512.png",
+      "chosenMaskableIconUrl": "https://hangtime.stevie-ray.nl/img/icons/android-chrome-maskable-512x512.png",
       "chosenMonochromeIconUrl": "https://hangtime.stevie-ray.nl/img/icons/android-shortcut-monochrome-512x512.png"
     },
     {
@@ -44,7 +44,7 @@
       "shortName": "Activity",
       "url": "https://hangtime.stevie-ray.nl/activity?utm_source=shortcut",
       "chosenIconUrl": "https://hangtime.stevie-ray.nl/img/icons/android-shortcut-512x512.png",
-      "chosenMaskableIconUrl":  "https://hangtime.stevie-ray.nl/img/icons/android-chrome-maskable-512x512.png",
+      "chosenMaskableIconUrl": "https://hangtime.stevie-ray.nl/img/icons/android-chrome-maskable-512x512.png",
       "chosenMonochromeIconUrl": "https://hangtime.stevie-ray.nl/img/icons/android-shortcut-monochrome-512x512.png"
     }
   ],
@@ -68,5 +68,5 @@
   "fingerprints": [],
   "additionalTrustedOrigins": [],
   "retainedBundles": [],
-  "appVersion": "2.0.0"
+  "appVersion": "2.0.1"
 }
