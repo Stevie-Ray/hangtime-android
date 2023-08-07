@@ -21,8 +21,8 @@
     "path": "./android.keystore",
     "alias": "android"
   },
-  "appVersionName": "2.0.1",
-  "appVersionCode": 20000001,
+  "appVersionName": "2.0.2",
+  "appVersionCode": 20000002,
   "shortcuts": [
     {
       "name": "Quick Workout",
@@ -69,5 +69,5 @@
   "fingerprints": [],
   "additionalTrustedOrigins": [],
   "retainedBundles": [],
-  "appVersion": "2.0.1"
+  "appVersion": "2.0.2"
 }
