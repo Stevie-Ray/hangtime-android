@@ -14,22 +14,21 @@
   "enableNotifications": true,
   "startUrl": "/?utm_source=homescreen",
   "iconUrl": "https://hangtime.stevie-ray.nl/img/icons/android-chrome-512x512.png",
-  "maskableIconUrl": "https://hangtime.stevie-ray.nl/img/icons/android-chrome-maskable-512x512.png",
-  "monochromeIconUrl": "https://hangtime.stevie-ray.nl/img/icons/android-chrome-monochrome-512x512.png",
+  "maskableIconUrl": "https://hangtime.stevie-ray.nl/img/icons/android-chrome-maskable.svg",
+  "monochromeIconUrl": "https://hangtime.stevie-ray.nl/img/icons/android-chrome-monochrome.svg",
   "splashScreenFadeOutDuration": 300,
   "signingKey": {
-    "path": "./android.keystore",
+    "path": "/Users/stevie-ray/Sites/hangtime-android/android.keystore",
     "alias": "android"
   },
-  "appVersionName": "2.0.2",
-  "appVersionCode": 20000002,
+  "appVersionName": "2.1.0",
+  "appVersionCode": 20000010,
   "shortcuts": [
     {
       "name": "Quick Workout",
       "shortName": "Quick Workout",
       "url": "https://hangtime.stevie-ray.nl/workouts/quick?utm_source=shortcut",
       "chosenIconUrl": "https://hangtime.stevie-ray.nl/img/icons/android-shortcut-512x512.png",
-      "chosenMaskableIconUrl": "https://hangtime.stevie-ray.nl/img/icons/android-chrome-maskable-512x512.png",
       "chosenMonochromeIconUrl": "https://hangtime.stevie-ray.nl/img/icons/android-shortcut-monochrome-512x512.png"
     },
     {
@@ -37,7 +36,6 @@
       "shortName": "Workouts",
       "url": "https://hangtime.stevie-ray.nl/?utm_source=shortcut",
       "chosenIconUrl": "https://hangtime.stevie-ray.nl/img/icons/android-shortcut-512x512.png",
-      "chosenMaskableIconUrl": "https://hangtime.stevie-ray.nl/img/icons/android-chrome-maskable-512x512.png",
       "chosenMonochromeIconUrl": "https://hangtime.stevie-ray.nl/img/icons/android-shortcut-monochrome-512x512.png"
     },
     {
@@ -45,12 +43,11 @@
       "shortName": "Activity",
       "url": "https://hangtime.stevie-ray.nl/activity?utm_source=shortcut",
       "chosenIconUrl": "https://hangtime.stevie-ray.nl/img/icons/android-shortcut-512x512.png",
-      "chosenMaskableIconUrl": "https://hangtime.stevie-ray.nl/img/icons/android-chrome-maskable-512x512.png",
       "chosenMonochromeIconUrl": "https://hangtime.stevie-ray.nl/img/icons/android-shortcut-monochrome-512x512.png"
     }
   ],
   "generatorApp": "bubblewrap-cli",
-  "webManifestUrl": "https://hangtime.stevie-ray.nl/manifest.json",
+  "webManifestUrl": "https://hangtime.stevie-ray.nl/manifest.webmanifest",
   "fallbackType": "customtabs",
   "features": {
     "playBilling": {
@@ -69,5 +66,5 @@
   "fingerprints": [],
   "additionalTrustedOrigins": [],
   "retainedBundles": [],
-  "appVersion": "2.0.2"
+  "appVersion": "2.1.0"
 }

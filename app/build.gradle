@@ -51,13 +51,14 @@ def twaManifest = [
 ]
 
 android {
-    compileSdkVersion 33
+    compileSdkVersion 35
+    namespace "nl.stevie.ray.hangtime"
     defaultConfig {
         applicationId "nl.stevie.ray.hangtime"
         minSdkVersion 19
-        targetSdkVersion 33
-        versionCode 20000002
-        versionName "2.0.2"
+        targetSdkVersion 35
+        versionCode 20000010
+        versionName "2.1.0"
 
         // The name for the application
         resValue "string", "appName", twaManifest.name
@@ -73,7 +74,7 @@ android {
             // The URL the Web Manifest for the Progressive Web App that the TWA points to. This
             // is used by Chrome OS and Meta Quest to open the Web version of the PWA instead of
             // the TWA, as it will probably give a better user experience for non-mobile devices.
-            resValue "string", "webManifestUrl", 'https://hangtime.stevie-ray.nl/manifest.json'
+            resValue "string", "webManifestUrl", 'https://hangtime.stevie-ray.nl/manifest.webmanifest'
         
 
         
@@ -203,7 +204,7 @@ repositories {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     
-        implementation 'com.google.androidbrowserhelper:billing:1.0.0-alpha10'
+        implementation 'com.google.androidbrowserhelper:billing:1.0.0-alpha11'
     
         implementation 'com.google.androidbrowserhelper:androidbrowserhelper:2.5.0'
     
