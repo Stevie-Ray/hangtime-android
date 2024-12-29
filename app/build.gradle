@@ -55,10 +55,10 @@ android {
     namespace "nl.stevie.ray.hangtime"
     defaultConfig {
         applicationId "nl.stevie.ray.hangtime"
-        minSdkVersion 19
+        minSdkVersion 21
         targetSdkVersion 35
-        versionCode 20000010
-        versionName "2.1.0"
+        versionCode 20000011
+        versionName "2.1.1"
 
         // The name for the application
         resValue "string", "appName", twaManifest.name
