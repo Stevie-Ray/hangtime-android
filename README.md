@@ -24,7 +24,7 @@ use `bubblewrap [cmd]`.
 
 ### Installing Bubblewrap
 
-```shell
+```bash
 npm i -g @bubblewrap/cli
 ```
 
@@ -36,7 +36,7 @@ can create different kinds of problems and should be avoided (see
 ### Initializing an Android Project
 Generate an Android project from an existing Web Manifest:
 
-```shell
+```bash
 bubblewrap init --manifest https://my-twa.com/manifest.json
 ```
 
@@ -53,7 +53,8 @@ and built using [Android Studio](https://developer.android.com/studio/). Please,
 applications using Android Studio.
 
 ### Building the Android Project
-```shell
+
+```bash
 bubblewrap build
 ```
 
@@ -215,9 +216,9 @@ Manages the list of fingerprints used to generate the Digital Asset Links file f
 
 Usage:
 
-```
+```bash
 bubblewrap fingerprint [subcommand]
-``` 
+```
 
 Global flags:
   - `--manifest=<manifest>`: path to the Trusted Web Activity configuration.',
@@ -266,37 +267,46 @@ Flags:
 
 ## `play`
 
-:warning: This is an experimental feature.
-
 Manages the artifacts for your Google Play Project.
+
+Usage:
+
+```bash
+bubblewrap play [subcommand]
+```
 
 **Note**:
 These feature requires a service account file to work correctly. Please see [this documentation](https://github.com/chromeos/pwa-play-billing#setup-a-service-account) for setting up a service account.
 
-The following options can be applied to all of the features commands:
-  - `--serviceAccountJsonFile`: sets the service account json file location in the twa-manifest.
+Global flags (can be applied to all of the features commands):
+  - `--serviceAccountFile`: sets the service account json file location in the twa-manifest.
   - `--manifest`: specifies the manifest file to use if not in the current directory.
+
 
 ### Subcommands
 
-#### `playPublish`
+#### `publish`
+
+Publishes provided bundle to the Play Store.
 
 Usage:
 
-```
-bubblewrap playPublish --serviceAccountFile="/path/to/service/account.json" --track="beta" --appBundleLocation="/home/appBundle.aab"
+```bash
+bubblewrap play publish --serviceAccountFile="/path/to/service/account.json" --track="beta" --appBundleLocation="/home/appBundle.aab"
 ```
 
 Options:
   - `--track`: publishes the prebuilt file to the Google Play Store specificed track (defaults to internal track).
   - `--appBundleLocation`: specifies the location of the appbundle to upload to Google Play (defaults to current directory).
 
-#### `playRetain`
+#### `retain`
+
+:warning: This is an experimental feature.
 
 Usage:
 
-```
-bubblewrap playRetain --add=86
+```bash
+bubblewrap play retain --add=86
 ```
 
 Options:
@@ -304,12 +314,12 @@ Options:
   - `--remove`: removes the specified bundle if no longer relevant.
   - `--list`: shows a list of existing retained bundles in the twa-manifest.json, not what is listed as retained from play.
 
-#### `playVersionCheck`
+#### `versionCheck`
 
 Usage:
 
-```
-bubblewrap playVersionCheck --serviceAccountFile="/path/to/service/account.json"  --targetDirectory="/home/my/app/dir"
+```bash
+bubblewrap play versionCheck --serviceAccountFile="/path/to/service/account.json"  --targetDirectory="/home/my/app/dir"
 ```
 
 Options:
@@ -365,6 +375,9 @@ Fields:
 |webManifestUrl|string|false|Full URL to the PWA Web Manifest. Required for the application to be compatible with Chrome OS and Meta Quest devices.|
 |fullScopeUrl|string|false|The navigation scope that the browser considers to be within the app. If the user navigates outside the scope, it reverts to a normal web page inside a browser tab or window. Must be a full URL. Required and used only by Meta Quest devices.|
 |minSdkVersion|number|false|The minimum [Android API Level](https://developer.android.com/guide/topics/manifest/uses-sdk-element#ApiLevels) required for the application to run. Defaults to `23`, if `isMetaQuest` is `true`, and `19` otherwise.|
+|protocolHandlers|[ProtocolHandler](#protocolhandlers)[]|false|List of [Protocol Handlers](#protocolhandlers) supported by the app.|
+|fileHandlers|[FileHandler](#fileHandlers)[]|false|List of [File Hanlders](#fileHandlers) supported by the app.|
+|launchHandlerClientMode|string|false|launch_handler [client_mode](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest/Reference/launch_handler#client_mode) of the app.|
 
 ### Features
 
@@ -435,9 +448,33 @@ Information on the signature fingerprints for the application. Use to generate t
 |name|string|false|An optional name for the fingerprint.|
 |value|string|true|The SHA-256 value for the fingerprint.|
 
+
+### ProtocolHandlers
+
+List of Protocol Handlers registered for the application. These entries may not exactly match what was originally in the webmanifest, because they have been normalized and validated using [these](https://wicg.github.io/manifest-incubations/#processing-the-protocol_handlers-member) rules. If a webmanifest entry is incorrect for any reason (invalid protocol, malformed target url, missing '%s' token) they will be ignored and a warning will be printed out. See [here](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest/Reference/protocol_handlers) for more information about the Protocol Handler spec. The full list of supported protocols is [here](https://github.com/GoogleChromeLabs/bubblewrap/blob/main/packages/core/src/lib/types/ProtocolHandler.ts).
+
+|Name|Type|Required|Description|
+|:--:|:--:|:------:|:---------:|
+|protocol|string|true|Data scheme to register (e.g. `bitcoin`, `irc`, `web+coffee`).|
+|url|string|true|Formula for converting a custom data scheme back to a http(s) link, must include '%s' and be the same origin as the web manifest file. Example: `https://test.com/?target=%s`|
+
+### FileHandlers
+
+List of File Handlers registered for the application. These entries may not exactly match what was originally in the webmanifest. If a webmanifest entry is incorrect for any reason it will be ignored and a warning will be printed out. See [here](https://developer.chrome.com/docs/capabilities/web-apis/file-handling?hl=en) for more information about file handling and [here](https://wicg.github.io/manifest-incubations/#file_handlers-member) for file_handlers webmanifest spec.
+
+|Name|Type|Required|Description|
+|:--:|:--:|:------:|:---------:|
+|actionUrl|string|true|URL to be navigated to in case of file handler launch matching the according MIME types|
+|mimeTypes|string[]|true|The list of MIME types for the file handler|
+
+### LaunchHandler
+A string, which specifies the context in which the app should be loaded when launched. Possible values are: "auto", "focus-existing", "navigate-existing", "navigate-new".
+See [launch_handler](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest/Reference/launch_handler) for more information.
+
+
 ## Manually setting up the Environment
 
-### Get the Java Development Kit (JDK) 11.
+### Get the Java Development Kit (JDK) 17.
 The Android Command line tools requires the correct version of the JDK to run. To prevent version
 conflicts with a JDK version that is already installed, Bubblewrap uses a JDK that can unzipped in
 a separate folder.

@@ -51,14 +51,14 @@ def twaManifest = [
 ]
 
 android {
-    compileSdkVersion 35
+    compileSdkVersion 36
     namespace "nl.stevie.ray.hangtime"
     defaultConfig {
         applicationId "nl.stevie.ray.hangtime"
         minSdkVersion 21
         targetSdkVersion 35
-        versionCode 20000012
-        versionName "2.1.2"
+        versionCode 20000014
+        versionName "2.1.4"
 
         // The name for the application
         resValue "string", "appName", twaManifest.name
@@ -204,8 +204,8 @@ repositories {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     
-        implementation 'com.google.androidbrowserhelper:billing:1.0.0-alpha11'
+        implementation 'com.google.androidbrowserhelper:billing:1.0.1'
     
-        implementation 'com.google.androidbrowserhelper:androidbrowserhelper:2.5.0'
+        implementation 'com.google.androidbrowserhelper:androidbrowserhelper:2.6.0'
     
 }
