@@ -21,8 +21,8 @@
     "path": "/Users/stevie-ray/Sites/hangtime-android/android.keystore",
     "alias": "android"
   },
-  "appVersionName": "2.1.5",
-  "appVersionCode": 20000015,
+  "appVersionName": "20000016",
+  "appVersionCode": 20000016,
   "shortcuts": [
     {
       "name": "Quick Workout",
@@ -61,11 +61,24 @@
   "isChromeOSOnly": false,
   "isMetaQuest": false,
   "fullScopeUrl": "https://hangtime.stevie-ray.nl/",
-  "minSdkVersion": 21,
+  "minSdkVersion": 23,
   "orientation": "any",
   "fingerprints": [],
   "additionalTrustedOrigins": [],
   "retainedBundles": [],
   "protocolHandlers": [],
-  "appVersion": "2.1.5"
+  "fileHandlers": [],
+  "launchHandlerClientMode": [
+    "focus-existing",
+    "navigate-existing",
+    "auto"
+  ],
+  "displayOverride": [
+    "standalone",
+    "minimal-ui",
+    "fullscreen",
+    "browser",
+    "window-controls-overlay"
+  ],
+  "appVersion": "20000016"
 }

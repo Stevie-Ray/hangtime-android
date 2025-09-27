@@ -55,10 +55,10 @@ android {
     namespace "nl.stevie.ray.hangtime"
     defaultConfig {
         applicationId "nl.stevie.ray.hangtime"
-        minSdkVersion 21
+        minSdkVersion 23
         targetSdkVersion 35
-        versionCode 20000015
-        versionName "2.1.5"
+        versionCode 20000016
+        versionName "20000016"
 
         // The name for the application
         resValue "string", "appName", twaManifest.name
@@ -70,6 +70,8 @@ android {
         def launchUrl = "https://" + twaManifest.hostName + twaManifest.launchUrl
         resValue "string", "launchUrl", launchUrl
 
+        
+            resValue "string", "launchHandlerClientMode", 'focus-existing,navigate-existing,auto'
         
 
         
@@ -210,6 +212,6 @@ dependencies {
     
         implementation 'com.google.androidbrowserhelper:billing:1.1.0'
     
-        implementation 'com.google.androidbrowserhelper:androidbrowserhelper:2.6.2'
+        implementation 'com.google.androidbrowserhelper:androidbrowserhelper:2.7.0-alpha01'
     
 }
