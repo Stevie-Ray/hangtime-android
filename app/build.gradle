@@ -57,8 +57,8 @@ android {
         applicationId "nl.stevie.ray.hangtime"
         minSdkVersion 23
         targetSdkVersion 35
-        versionCode 20000016
-        versionName "20000016"
+        versionCode 20000017
+        versionName "20000017"
 
         // The name for the application
         resValue "string", "appName", twaManifest.name

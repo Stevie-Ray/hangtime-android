@@ -21,8 +21,8 @@
     "path": "/Users/stevie-ray/Sites/hangtime-android/android.keystore",
     "alias": "android"
   },
-  "appVersionName": "20000016",
-  "appVersionCode": 20000016,
+  "appVersionName": "20000017",
+  "appVersionCode": 20000017,
   "shortcuts": [
     {
       "name": "Quick Workout",
@@ -80,5 +80,5 @@
     "browser",
     "window-controls-overlay"
   ],
-  "appVersion": "20000016"
+  "appVersion": "20000017"
 }
